@@ -14,8 +14,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 const port = process.env.PORT || 3000;
-const accountId = process.env.ACCOUNT_ID || "ACCOUNT_ID";
-const subscriptionKey = process.env.SUBSCRIPTION_KEY || "SUBSCRIPTION_KEY";
+const accountId = process.env.ACCOUNT_ID || "4fd2251b-a519-4b7b-bdf2-87af035d82e2";
+const subscriptionKey = process.env.SUBSCRIPTION_KEY || "34d290e241de45a582c19fc894cbf393";
 
 app.get('/', function (req, res) {
   res.render('index.html');
